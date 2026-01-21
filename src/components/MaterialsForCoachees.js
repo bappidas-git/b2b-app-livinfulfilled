@@ -18,6 +18,12 @@ import {
   Article,
 } from "@mui/icons-material";
 import Logo from "../assets/Logo.png";
+import V0Image from "../assets/V0.jpg";
+import V1Image from "../assets/V1.jpg";
+import V2Image from "../assets/V2.jpg";
+import V3Image from "../assets/V3.jpg";
+import V4Image from "../assets/V4.jpg";
+import V5Image from "../assets/V5.jpg";
 import "../styles/MaterialsForCoachees.css";
 
 // Using Material-UI icons as fallbacks since icon files are not available
@@ -102,37 +108,43 @@ const MaterialsForCoachees = () => {
     },
   ];
 
-  // PDF Workbook files - using external URLs (will be updated with individual links later)
+  // PDF Workbook files - using external URLs with cover images
   const pdfWorkbooks = [
     {
       id: "workbook-0",
       title: "Bookelet 0",
       url: "https://livinfulfilled.com/wp-content/uploads/2026/01/Workbook-V0.pdf",
+      image: V0Image,
     },
     {
       id: "workbook-1",
       title: "Bookelet 1",
       url: "https://livinfulfilled.com/wp-content/uploads/2026/01/Workbook-V1-1.pdf",
+      image: V1Image,
     },
     {
       id: "workbook-2",
       title: "Bookelet 2",
       url: "https://livinfulfilled.com/wp-content/uploads/2026/01/Workbook-V2.pdf",
+      image: V2Image,
     },
     {
       id: "workbook-3",
       title: "Bookelet 3",
       url: "https://livinfulfilled.com/wp-content/uploads/2026/01/Workbook-V3.pdf",
+      image: V3Image,
     },
     {
       id: "workbook-4",
       title: "Bookelet 4",
       url: "https://livinfulfilled.com/wp-content/uploads/2026/01/Workbook-V4.pdf",
+      image: V4Image,
     },
     {
       id: "workbook-5",
       title: "Bookelet 5",
       url: "https://livinfulfilled.com/wp-content/uploads/2026/01/Workbook-V5.pdf",
+      image: V5Image,
     },
   ];
 
@@ -333,18 +345,22 @@ const MaterialsForCoachees = () => {
   );
 
   const renderPdfWorkbooks = () => (
-    <div className="materials-cards-grid">
+    <div className="materials-cards-grid pdf-workbooks-grid">
       {pdfWorkbooks.map((workbook, index) => (
         <motion.div
           key={workbook.id}
-          className="material-card"
+          className="material-card pdf-workbook-card"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 + index * 0.05, duration: 0.3 }}
         >
           <h3 className="material-title">{workbook.title}</h3>
-          <div className="material-icon">
-            <PictureAsPdf className="material-mui-icon" />
+          <div className="workbook-image-container">
+            <img
+              src={workbook.image}
+              alt={workbook.title}
+              className="workbook-cover-image"
+            />
           </div>
           <div className="dual-actions">
             <button
