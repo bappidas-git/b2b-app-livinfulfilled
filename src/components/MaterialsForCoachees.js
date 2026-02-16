@@ -54,7 +54,7 @@ const MaterialsForCoachees = () => {
       action: "play",
       onClick: () =>
         openVideoModal(
-          "https://res.cloudinary.com/ddfxshxwx/video/upload/v1767607910/Video-Banner_cq6ii4.mp4",
+          "https://video.gumlet.io/688f394969cc5f5f003525c3/6992eb4496b6566b13fdc75f/download.mp4",
           "Explainer Video",
         ),
     },
