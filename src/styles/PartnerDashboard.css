@@ -35,15 +35,28 @@
   width: auto;
 }
 
+.header-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
 .header-title {
   font-size: 1.1rem;
   font-weight: 600;
   color: #1d1d1f;
   margin: 0;
   letter-spacing: -0.02em;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.header-subtitle {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #6e6e73;
+  margin: 2px 0 0 0;
+  letter-spacing: -0.01em;
   white-space: nowrap;
 }
 
@@ -323,12 +336,19 @@
     left: 1rem;
   }
 
+  .header-center {
+    max-width: 50%;
+  }
+
   .header-title {
     font-size: 0.9rem;
-    max-width: 50%;
     white-space: normal;
-    text-align: center;
     line-height: 1.2;
+  }
+
+  .header-subtitle {
+    font-size: 0.65rem;
+    white-space: normal;
   }
 
   .header-logo {
@@ -394,9 +414,16 @@
 }
 
 @media (max-width: 480px) {
+  .header-center {
+    max-width: 40%;
+  }
+
   .header-title {
     font-size: 0.8rem;
-    max-width: 40%;
+  }
+
+  .header-subtitle {
+    font-size: 0.6rem;
   }
 
   .logout-button-header span {
