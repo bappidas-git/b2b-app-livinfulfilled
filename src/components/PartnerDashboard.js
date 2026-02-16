@@ -95,7 +95,10 @@ const PartnerDashboard = ({ onLogout }) => {
           <img src={Logo} alt="Living Fulfilled" className="header-logo" />
         </div>
 
-        <h1 className="header-title">Living Fulfilled - Fulfillment Hub</h1>
+        <div className="header-center">
+          <h1 className="header-title">Living Fulfilled - Fulfillment Hub</h1>
+          <p className="header-subtitle">Your One Stop Shop for all Living Fulfilled Assets</p>
+        </div>
 
         <button className="logout-button-header" onClick={handleLogoutClick}>
           <Logout fontSize="small" />
