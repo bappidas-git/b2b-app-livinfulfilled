@@ -96,7 +96,6 @@ const PartnerDashboard = ({ onLogout }) => {
         </div>
 
         <h1 className="header-title">Living Fulfilled - Fulfillment Hub</h1>
-        <h5>Your One Stop Shop for all Living Fulfilled Assets</h5>
 
         <button className="logout-button-header" onClick={handleLogoutClick}>
           <Logout fontSize="small" />
