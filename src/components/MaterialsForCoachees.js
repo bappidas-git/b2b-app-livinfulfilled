@@ -68,7 +68,7 @@ const MaterialsForCoachees = () => {
     },
     {
       id: "one-page-blueprint",
-      title: "1 Page Blueprint",
+      title: "One Page Living Fulfiled Life Blueprint",
       IconComponent: Description,
       action: "view-download",
       pdfUrl:

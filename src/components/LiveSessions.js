@@ -12,7 +12,7 @@ const LiveSessions = ({ standalone = false }) => {
 
   const lastDayItems = [
     { number: "1", text: "Life Plan Excel" },
-    { number: "2", text: "1 Page Blueprint" },
+    { number: "2", text: "One Page Living Fulfiled Life Blueprint" },
     { number: "3", text: "Vision Boards" },
   ];
 
