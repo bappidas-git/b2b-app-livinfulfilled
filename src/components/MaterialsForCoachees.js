@@ -55,7 +55,7 @@ const MaterialsForCoachees = () => {
       onClick: () =>
         openVideoModal(
           "https://res.cloudinary.com/ddfxshxwx/video/upload/v1767607910/Video-Banner_cq6ii4.mp4",
-          "Explainer Video"
+          "Explainer Video",
         ),
     },
     {
@@ -244,7 +244,7 @@ const MaterialsForCoachees = () => {
       case "google-docs":
         return "Google Word Documents";
       default:
-        return "Materials for Coachees";
+        return "Materials for End Users";
     }
   };
 
@@ -306,7 +306,7 @@ const MaterialsForCoachees = () => {
                 onClick={() =>
                   handleDownload(
                     material.downloadUrl,
-                    "Living-Fulfilled-Life-Plan-Spreadsheet.xlsx"
+                    "Living-Fulfilled-Life-Plan-Spreadsheet.xlsx",
                   )
                 }
               >

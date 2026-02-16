@@ -15,7 +15,8 @@ import ImageZoomModal from "./components/ImageZoomModal";
 import "./styles/App.css";
 
 // Cloudinary URL for Life Model image
-const LIFE_MODEL_IMG = "https://res.cloudinary.com/ddfxshxwx/image/upload/v1767607852/Transformation-Visualization_uvcln0.png";
+const LIFE_MODEL_IMG =
+  "https://res.cloudinary.com/ddfxshxwx/image/upload/v1767607852/Transformation-Visualization_uvcln0.png";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -68,11 +69,8 @@ function App() {
           element={<PartnerDashboard onLogout={handleLogout} />}
         />
 
-        {/* Materials for Coachees Route */}
-        <Route
-          path="/materials"
-          element={<MaterialsForCoachees />}
-        />
+        {/* Materials for End Users Route */}
+        <Route path="/materials" element={<MaterialsForCoachees />} />
 
         {/* Live Sessions Route */}
         <Route
@@ -143,16 +141,10 @@ function App() {
         />
 
         {/* Marketing Assets Route */}
-        <Route
-          path="/marketing-assets"
-          element={<MarketingAssets />}
-        />
+        <Route path="/marketing-assets" element={<MarketingAssets />} />
 
         {/* Content Coming Soon Route - for all marketing asset sub-pages */}
-        <Route
-          path="/coming-soon/:section"
-          element={<ContentComingSoon />}
-        />
+        <Route path="/coming-soon/:section" element={<ContentComingSoon />} />
 
         {/* Brand & Messaging Playbook Route - redirects to coming soon */}
         <Route

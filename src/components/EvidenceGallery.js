@@ -4,14 +4,22 @@ import GalleryModal from "./GalleryModal";
 import "../styles/EvidenceGallery.css";
 
 // Evidence Gallery images - Cloudinary URLs (placeholder images for now)
-const WB1 = "https://res.cloudinary.com/ddfxshxwx/image/upload/v1767607852/Transformation-Visualization_uvcln0.png";
-const WB2 = "https://res.cloudinary.com/ddfxshxwx/image/upload/v1767607850/Materials-for-Coachees_ep8t7z.png";
-const WB3 = "https://res.cloudinary.com/ddfxshxwx/image/upload/v1767607850/Brand-and-Messaging-Playbook-Icon_rd5kip.png";
-const WB4 = "https://res.cloudinary.com/ddfxshxwx/image/upload/v1767607850/Marketing-Assets_afksza.png";
-const WB5 = "https://res.cloudinary.com/ddfxshxwx/image/upload/v1767607851/Media-Kit_b2imso.png";
-const WB6 = "https://res.cloudinary.com/ddfxshxwx/image/upload/v1767607850/5-Day-Program_vzfvyd.png";
-const WB7 = "https://res.cloudinary.com/ddfxshxwx/image/upload/v1767607850/Balconies-and-Basements_iitigd.png";
-const WB8 = "https://res.cloudinary.com/ddfxshxwx/image/upload/v1767607850/1-Page-Blueprint_dmvp1l.png";
+const WB1 =
+  "https://res.cloudinary.com/ddfxshxwx/image/upload/v1767607852/Transformation-Visualization_uvcln0.png";
+const WB2 =
+  "https://res.cloudinary.com/ddfxshxwx/image/upload/v1767607850/Materials-for-Coachees_ep8t7z.png";
+const WB3 =
+  "https://res.cloudinary.com/ddfxshxwx/image/upload/v1767607850/Brand-and-Messaging-Playbook-Icon_rd5kip.png";
+const WB4 =
+  "https://res.cloudinary.com/ddfxshxwx/image/upload/v1767607850/Marketing-Assets_afksza.png";
+const WB5 =
+  "https://res.cloudinary.com/ddfxshxwx/image/upload/v1767607851/Media-Kit_b2imso.png";
+const WB6 =
+  "https://res.cloudinary.com/ddfxshxwx/image/upload/v1767607850/5-Day-Program_vzfvyd.png";
+const WB7 =
+  "https://res.cloudinary.com/ddfxshxwx/image/upload/v1767607850/Balconies-and-Basements_iitigd.png";
+const WB8 =
+  "https://res.cloudinary.com/ddfxshxwx/image/upload/v1767607850/1-Page-Blueprint_dmvp1l.png";
 
 const EvidenceGallery = ({ standalone = false }) => {
   const [galleryOpen, setGalleryOpen] = useState(false);
@@ -27,7 +35,7 @@ const EvidenceGallery = ({ standalone = false }) => {
     {
       thumb: WB2,
       full: WB2,
-      title: "Materials for Coachees",
+      title: "Materials for End Users",
       description: "",
     },
     {

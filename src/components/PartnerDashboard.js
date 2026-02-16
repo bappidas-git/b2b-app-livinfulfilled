@@ -57,7 +57,7 @@ const PartnerDashboard = ({ onLogout }) => {
   const folderSections = [
     {
       id: "materials",
-      title: "Materials for Coachees",
+      title: "Materials for End Users",
       icon: MaterialsForCoacheesIcon,
       route: "/materials",
     },
