@@ -14,6 +14,7 @@ import {
   Description,
   TableChart,
   AutoGraph,
+  Assessment,
   PictureAsPdf,
   Article,
 } from "@mui/icons-material";
@@ -24,6 +25,7 @@ import V2Image from "../assets/V2.jpg";
 import V3Image from "../assets/V3.jpg";
 import V4Image from "../assets/V4.jpg";
 import V5Image from "../assets/V5.jpg";
+import LivingFulfilledScorecard from "../assets/Living Fulfilled Scorecard.docx";
 import "../styles/MaterialsForCoachees.css";
 
 // Using Material-UI icons as fallbacks since icon files are not available
@@ -89,6 +91,15 @@ const MaterialsForCoachees = () => {
       action: "view-download",
       pdfUrl:
         "https://livinfulfilled.com/wp-content/uploads/2026/01/Living-Fulfilled-Transformation-Visuals.pdf",
+    },
+    {
+      id: "scorecard",
+      title: "Living Fulfilled Score Card",
+      IconComponent: Assessment,
+      action: "download-only",
+      downloadUrl: LivingFulfilledScorecard,
+      downloadFilename: "Living Fulfilled Scorecard.docx",
+      buttonLabel: "Download Now",
     },
   ];
 
@@ -306,12 +317,13 @@ const MaterialsForCoachees = () => {
                 onClick={() =>
                   handleDownload(
                     material.downloadUrl,
-                    "Living-Fulfilled-Life-Plan-Spreadsheet.xlsx",
+                    material.downloadFilename ||
+                      "Living-Fulfilled-Life-Plan-Spreadsheet.xlsx",
                   )
                 }
               >
                 <Download className="button-icon" />
-                Download
+                {material.buttonLabel || "Download"}
               </button>
             )}
           </div>
