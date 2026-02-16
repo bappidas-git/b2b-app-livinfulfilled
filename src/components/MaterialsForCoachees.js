@@ -76,7 +76,7 @@ const MaterialsForCoachees = () => {
     },
     {
       id: "life-plan-excel",
-      title: "Life Plan Actions & Decisions Blueprint",
+      title: "Living Fulfiled Life Plan Spreadsheet",
       IconComponent: TableChart,
       action: "download-only",
       downloadUrl:
